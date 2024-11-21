@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="section-navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Smart Gear</a></li>
+      <li><a href="#">Accessories</a></li>
+    </ul>
+  </nav>
+<div class="main-wrapper">
+  <div class="main-container">
+    <div class="section-banner">
+      <img  src="./assets/banner.webp" alt="banner">
+      <div class="banner-title">
+        <h1>
+          Men's Outerwear
+        </h1>
+      </div>
+    </div>
+    <div class="product-listing-section">
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="">Category</option>
+          <!-- Dynamically populated -->
+        </select>
+        <select id="priceFilter">
+          <option value="">Price Range</option>
+          <!-- Dynamically populated -->
+        </select>
+      </div>
+      <div class="listing">
+        <div class="sorting">
+          <select id="sortBy">
+            <option value="priceAsc">Sort by Price (Low to High)</option>
+            <option value="priceDesc">Sort by Price (High to Low)</option>
+          </select>
+          <input type="text" id="searchBar" placeholder="Search products...">
+          
+        </div>
+        <div class="products">
+          <div id="productGrid" class="product-grid">
+          </div>
+          <button id="loadMoreButton" class="load-more">Load More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
